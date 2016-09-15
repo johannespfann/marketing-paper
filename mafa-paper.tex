@@ -1,0 +1,87 @@
+%\documentclass[a4paper,11pt]{scrreprt}
+%\documentclass[a4paper,15pt]{scrbook}
+\documentclass[a4paper,11pt]{scrartcl}
+%\documentclass[a4paper,13pt]{scrreprt}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%\usepackage[latin9]{inputenc}
+\usepackage{scrpage2}
+\usepackage{titleref}
+\usepackage[ngerman]{babel}
+\usepackage{multicol}
+\usepackage{lmodern}  
+\usepackage{tabularx} 
+\usepackage{graphicx}
+\usepackage{blindtext}
+\usepackage{microtype}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{framed} %umramen eines Bereiches
+%\usepackage[left=25mm,right=25mm,top=25mm,bottom=25mm]{geometry} % Standard
+%\usepackage[left=20mm,right=20mm,top=25mm,bottom=30mm]{geometry}
+%\usepackage[singlespacing]{setspace}
+\usepackage[onehalfspacing]{setspace}
+%\usepackage[doublespacing]{setspace}
+\usepackage{verbatim}
+\usepackage{listings}
+%\usepackage[svgnames]{xcolor}
+\usepackage{xcolor} 
+\usepackage{setspace}
+\usepackage{amsthm}
+\usepackage{float}
+\usepackage{pdfpages}
+\usepackage{mdwlist}
+\usepackage{prettyref}
+\usepackage{multicol}
+\usepackage[section]{minted}	
+\usepackage{hyperref}
+
+%%%%%% Beschriftung
+\newcommand{\changefont}[3]{
+\fontfamily{#1}\fontseries{#2}\fontshape{#3}\selectfont}
+
+
+%\include{./color}
+%\include{./environment}
+%\input{./minted}
+%\input{./listings}	
+	
+\begin{document}
+%-------------------------------------
+% Titelseite 
+\input{./title}
+%-------------------------------------
+
+%-------------------------------------
+% Verzeichnisse  
+\tableofcontents % Inhaltsverzeichnis
+\pagebreak
+%\listoffigures % Abbildungsverzeichnis 
+%\listoftables % Tabellenverzeichnis 
+%-------------------------------------
+
+%-------------------------------------
+% Textkörper
+%%%%%%%%%%%%%%%%%%%%%[Einleitung]
+\section{Zusammenfassung}
+\input{./content/abstract}
+
+
+\section{Einleitung}
+\input{./content/einleitung}
+
+\section{YouNow}
+\input{./content/younow-beschreibung}
+
+\section{Snapchat}
+\input{./content/snapchat-beschreibung}
+
+
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%[Quellen]
+\section{Quellen}
+\input{./content/quellen}
+
+
+\end{document}
