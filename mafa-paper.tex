@@ -36,6 +36,7 @@
 \usepackage{multicol}
 \usepackage[section]{minted}	
 \usepackage{hyperref}
+\usepackage[square,comma,numbers,sort&compress]{natbib}
 
 %%%%%% Beschriftung
 \newcommand{\changefont}[3]{
@@ -102,8 +103,10 @@
 \pagebreak
 
 %%%%%%%%%%%%%%%%%%%%%[Quellen]
-\section{Quellen}
-\input{./content/quellen}
+%\section{Quellen}
+%\input{./content/quellen}
+\bibliographystyle{plainnat}
+\bibliography{mafa-paper}
 
 
 \end{document}
