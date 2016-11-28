@@ -1,6 +1,6 @@
 %\documentclass[a4paper,11pt]{scrreprt}
 %\documentclass[a4paper,15pt]{scrbook}
-\documentclass[a4paper,12pt]{scrartcl}
+\documentclass[bibliography=totoc,a4paper,12pt]{scrartcl}
 %\documentclass[a4paper,13pt]{scrreprt}
 
 \usepackage[T1]{fontenc}
@@ -36,6 +36,7 @@
 \usepackage{multicol}
 \usepackage[section]{minted}	
 \usepackage{hyperref}
+\usepackage{url}
 \usepackage[square,comma,numbers,sort&compress]{natbib}
 
 %%%%%% Beschriftung
@@ -55,6 +56,7 @@
 %-------------------------------------
 
 %-------------------------------------
+\pagenumbering{roman}
 % Verzeichnisse  
 \tableofcontents % Inhaltsverzeichnis
 \pagebreak
@@ -70,6 +72,7 @@
 
 \newpage
 
+\pagenumbering{arabic}
 \section{Einleitung}
 \input{./content/einleitung}
 
@@ -104,9 +107,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%[Quellen]
 %\section{Quellen}
-%\input{./content/quellen}
 \bibliographystyle{plainnat}
 \bibliography{mafa-paper}
-
 
 \end{document}
