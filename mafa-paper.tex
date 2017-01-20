@@ -57,9 +57,6 @@
 
 %-------------------------------------
 \pagenumbering{roman}
-% Verzeichnisse  
-\tableofcontents % Inhaltsverzeichnis
-\pagebreak
 %\listoffigures % Abbildungsverzeichnis 
 %\listoftables % Tabellenverzeichnis 
 %-------------------------------------
@@ -67,11 +64,17 @@
 %-------------------------------------
 % Textkörper
 %%%%%%%%%%%%%%%%%%%%%[Einleitung]
+\section*{Nutzungsrecht}
+\input{./content/nutzung}
+\newpage
 \section*{Zusammenfassung}
 \input{./content/abstract}
 
 \newpage
 
+% Verzeichnisse
+\tableofcontents % Inhaltsverzeichnis
+\pagebreak
 \pagenumbering{arabic}
 \section{Einleitung}
 \label{einleitung}
